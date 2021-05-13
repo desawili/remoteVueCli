@@ -1,17 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1> {{ titulo}} </h1>
+  <button>Apretame</button>
+  <input type="text" ref="caja">
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "App",
+  data() {
+    return {
+      titulo:'Agarrala Zamorano!'
+    }
   }
-}
+};
 </script>
 
 <style>
